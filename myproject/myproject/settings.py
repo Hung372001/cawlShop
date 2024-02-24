@@ -18,6 +18,10 @@ NEWSPIDER_MODULE = "myproject.spiders"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
+ITEM_PIPELINES = {
+  'myproject.pipelines.MyprojectPipeline': 300,
+}
+XLSX_FILE = 'demo.xlsx'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
